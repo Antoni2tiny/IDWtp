@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+header {
+    background: url("../img/jujuy.png") no-repeat center center/cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+.header-content img {
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 15px 0;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    width: 100%;
+    max-width: 400px; /* Reducir el tamaño del formulario */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor del formulario y las redes sociales */
+.form-redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para las imágenes de las redes sociales */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociales img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    opacity: 0.7;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+}

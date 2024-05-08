@@ -6,30 +6,29 @@ body {
     line-height: 1.6;
 }
 
-/* Estilos para el encabezado */
+
 header {
-    background-color: #333;
+    background: url("../img/jujuy.png") no-repeat center center/cover;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+.header-content img {
+    display: block;
+    margin: 20px auto;
+    height: 40px;
 }
 
-/* Estilo para la barra de nav */
-nav {
-    background-color: #333;
-}
-
+/* Estilos para la navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 15px 0;
 }
 
 nav ul li:last-child {
@@ -39,7 +38,7 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     font-family:Arial, Helvetica, sans-serif;
     padding: 10px 15px;
 }
@@ -50,7 +49,7 @@ nav ul li a:hover {
 
 /* Estilo para body */
 body{
-    font-size: 22px;
+    font-size: 10px;
     background-color: #fff;
     color: #555;
 }
@@ -74,16 +73,39 @@ body{
 }
 
 .hotel img {
-    width: 100%;
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.hotel img:hover {
+    transform: scale(1.2); /* Agrandar la imagen al pasar el cursor por encima */
 }
 
 .hotel a {
     color:#555;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 10px;
     font-family:Arial, Helvetica, sans-serif;
     display: block;
+    width: 300px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+.featured-hotels{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    min-height: 100vh; 
+}
+
+.hotel a:hover {
+    overflow: visible; 
+    white-space: normal; 
 }
 
 /* Estilos para el pie de página */
